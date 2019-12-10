@@ -29,7 +29,7 @@ public class Koneksi {
                     Class.forName(driver);
                     connection = (Connection) DriverManager.getConnection(url,user,password);
                     //JOptionPane.showMessageDialog(null,"connected");
-                    Statement stmt = connection.createStatement();
+                    Statement stmt = connection.createStatement(); //check koneksi databse
                     ResultSet rs = stmt.executeQuery("SELECT * FROM tb_sembako;");
                     while(rs.next()){
                         int idx = rs.getInt("id");

@@ -182,6 +182,11 @@ public class FormContoh extends javax.swing.JFrame {
                 "ID", "Nama Barang", "Stok", "Harga"
             }
         ));
+        tblBarang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblBarangMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblBarang);
 
         lblCari.setText("Cari Dengan Nama Barang");
@@ -359,6 +364,10 @@ public class FormContoh extends javax.swing.JFrame {
             System.out.println(e.toString());
         }
     }//GEN-LAST:event_txtCariKeyReleased
+
+    private void tblBarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblBarangMouseClicked
+        
+    }//GEN-LAST:event_tblBarangMouseClicked
 
     /**
      * @param args the command line arguments
