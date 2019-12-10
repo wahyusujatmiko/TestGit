@@ -13,6 +13,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 import net.proteanit.sql.DbUtils;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -366,7 +367,17 @@ public class FormContoh extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCariKeyReleased
 
     private void tblBarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblBarangMouseClicked
+        int i = tblBarang.getSelectedRow();
+        TableModel tm = tblBarang.getModel();
+        String idn = tm.getValueAt(i, 0).toString();
+        String naman = tm.getValueAt(i, 1).toString();
+        String stokn = tm.getValueAt(i, 2).toString();
+        String hargan = tm.getValueAt(i, 3).toString();
         
+        txtId.setText(idn);
+        txtNama.setText(naman);
+        txtStok.setText(stokn);
+        txtHarga.setText(hargan);
     }//GEN-LAST:event_tblBarangMouseClicked
 
     /**
