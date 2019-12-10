@@ -24,3 +24,4 @@ Sistem program integrasi antara display, database dan jasperreport. Display yang
 - Download dan add library groovy-all-2.0.8.jar. Download librarynya ada di link berikut: http://www.java2s.com/Code/Jar/g/Downloadgroovyall208jar.htm.
 - Download dan add library jasperreports-6.10.0.jar. Download librarynya ada di link berikut: https://sourceforge.net/projects/jasperreports/files/jasperreports/JasperReports%206.10.0/.
 - JDK yang digunakan adalah JDK 8.
+- Download dan add library rs2xml.jar di https://hacksmile.com/rs2xml-jar-free-download/.
